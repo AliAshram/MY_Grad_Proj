@@ -10,7 +10,6 @@ from Model import TestModel
 from Visualization import Visualization
 from Utils import import_test_configuration, set_sumo, set_test_path
 
-os.chdir("/home/ali/Documents/PyVenv/MY_Grad_Proj")
 
 if __name__ == "__main__":
 

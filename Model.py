@@ -20,7 +20,7 @@ class TrainModel:
         self._model = self._build_model(num_layers, width)
 
     def _build_model(self, num_layers, width):
-        """
+        """m
         Build and compile a fully connected deep neural network
         """
         inputs = keras.Input(shape=(self._input_dim,))
@@ -95,6 +95,7 @@ class TestModel:
         """
         model_file_path = os.path.join(model_folder_path, 'trained_model.keras')
         print(model_file_path)
+        print(model_folder_path)
         
         if os.path.isfile(model_file_path):
             loaded_model = keras.models.load_model(model_file_path)
