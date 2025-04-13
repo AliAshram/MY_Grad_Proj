@@ -94,6 +94,7 @@ class TestModel:
         Load the model stored in the folder specified by the model number, if it exists
         """
         model_file_path = os.path.join(model_folder_path, 'trained_model.keras')
+        print(model_file_path)
         
         if os.path.isfile(model_file_path):
             loaded_model = keras.models.load_model(model_file_path)
